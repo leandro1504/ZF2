@@ -30,7 +30,7 @@ class Module
 
         $categoriesService = $e->getApplication()->getServiceManager()->get('categories');
         $vm->setVariables(array(
-            "categories" => "CATEGORY LIST",
+            "categories" => "CATEGORIES",
             "subCategories" => $categoriesService
         ));
 
