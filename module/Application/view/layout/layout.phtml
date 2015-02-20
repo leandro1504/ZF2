@@ -44,12 +44,19 @@
             </div>
         </nav>
         <div class="container">
-            <div class="col-lg-2">
-                <?php echo $this->categories; ?>
-            </div>
-            <div class="col-lg-8">
-                <?php echo $this->content; ?>
-            </div>
+            <div class="row">
+                <div class="col-xs-4 col-sm-3">
+                    <?php echo $this->categories; ?>
+                    <hr class="alert-info">
+                    <ul>
+                        <?php foreach($this->subCategories as $subCategorie) { ?>
+                            <li><?php echo $subCategorie; ?></li>
+                        <?php } ?>
+                    </ul>
+                </div>
+                <div class="col-xs-8 col-sm-9">
+                    <?php echo $this->content; ?>
+                </div>
             </div>
             <hr>
             <footer>
